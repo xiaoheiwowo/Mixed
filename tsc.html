@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right,rgb(114, 135, 254), rgb(130,88,168));
+        }
+
+        body .container {
+            width: 600px;
+            height: 320px;
+            margin: 0 auto;
+            margin-top: 10%;
+            border-radius: 15px;
+            box-shadow: 0 10px 50px 0 rgb(59, 45, 159);
+            background-color: rgb(95, 76, 194);
+        }
+
+        body .container .left_container {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 60px;
+            background-image: linear-gradient(to bottom right, rgb(118,76,163), rgb(92, 103, 211));
+        }
+
+        body .container .left_container .title{
+            color: #fff;
+            font-size: 18px;
+            font-weight: 200;
+        }
+        body .container .left_container .title span{
+            border-bottom: 3px solid rgb(237,221,22);
+        }
+
+        body .container .left_container .input_container{
+            padding: 20px 0;
+
+        }
+
+        body .container .left_container .input_container input{
+            border: 0;
+            background: none;
+            outline: 0;
+            color:white;
+            margin: 20px 0;
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            transition: .2s;
+            border-bottom: 1px solid rgb(199,191,219);
+        }
+        body .container .left_container .input_container input:hover{
+            border-bottom-color: white;
+        }
+
+        ::-webkit-input-placeholder{
+            color: rgb(199, 191, 219);
+        }
+
+        body .container .left_container .msg_container {
+            font-size: 14px;
+            transition: 0.2s;
+            color: rgb(199, 191, 219);
+            cursor: pointer;
+        }
+
+        body .container .left_container .msg_container:hover{
+            color: white;
+        }
+
+        body .container .right_container {
+            display: inline-block;
+            width: 145;
+            height: calc(100% - 120px);
+            vertical-align: top;
+            padding: 60px 0;
+            padding-left: 60px;
+
+        }
+
+        body .container .right_container .content {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        body .container .right_container .content span {
+            border-bottom: 3px solid rgb(237,221,22);
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left_container">
+      <div class="title"><span>登录</span></div>
+      <div class="input_container">
+        <input type="text" name="username" placeholder="用户名">
+        <input type="password" name="password" placeholder="密码">
+      </div>
+      <div class="msg_container">
+        <span>忘记密码</span>
+      </div>
+    </div>
+    <div class="right_container">
+      <div class="content"><span>注册</span></div>
+    </div>
+  </div>
+</body>
+
+
+</html>
